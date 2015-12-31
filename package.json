@@ -1,0 +1,22 @@
+{
+  "name": "sozi-export",
+  "version": "15.12.24",
+  "description": "Convert a Sozi presentation to video",
+  "author": "Guillaume Savaton",
+  "licence": "MPL",
+  "main": "lib/index.js",
+  "bin": {
+    "sozi-to-video": "./cli/sozi-to-video.js",
+    "sozi-to-pdf": "./cli/sozi-to-pdf.js"
+  },
+  "files": [
+    "lib",
+    "cli"
+  ],
+  "dependencies": {
+    "commander": "^2.9.0",
+    "execSync": "^1.0.2",
+    "slimerjs": "^0.9.6-2",
+    "tmp": "0.0.28"
+  }
+}
