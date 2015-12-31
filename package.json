@@ -1,9 +1,13 @@
 {
   "name": "sozi-export",
-  "version": "15.12.24",
-  "description": "Convert a Sozi presentation to video",
+  "version": "15.12.31",
+  "description": "Convert a Sozi presentation to PDF or video",
   "author": "Guillaume Savaton",
   "licence": "MPL",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/senshu/Sozi-export.git"
+  },
   "main": "lib/index.js",
   "bin": {
     "sozi-to-video": "./cli/sozi-to-video.js",
