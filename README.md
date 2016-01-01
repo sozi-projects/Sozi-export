@@ -68,10 +68,6 @@ Options:
 * `-W`, `--width <number>` Video width, in pixels (defaults to 1024)
 * `-H`, `--height <number>` Video height (defaults to 768)
 * `-b`, `--bit-rate <number>` Video bit rate (defaults to 2M)
-* `-p`, `--paper <size>` A LaTeX paper size (defaults to a4paper)
-* `-P`, `--portrait` Set the paper orientation to portrait (disabled by default)
-* `-i`, `--include <list>` Frames to include (defaults to 'all')
-* `-x`, `--exclude <list>` Frames to exclude (defaults to 'none')
 
 Known issues and limitations
 ----------------------------
