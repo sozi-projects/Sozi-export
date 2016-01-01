@@ -1,6 +1,6 @@
 {
   "name": "sozi-export",
-  "version": "16.1.1",
+  "version": "16.1.1-r1",
   "description": "Convert a Sozi presentation to PDF or video",
   "author": "Guillaume Savaton",
   "licence": "MPL",
