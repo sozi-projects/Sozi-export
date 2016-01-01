@@ -7,10 +7,11 @@ Install
 -------
 
 The PDF exporter depends on [pdfjam](http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam), a shell script for manipulating PDF files.
-Users of Debian-based distributions can install the *texlive-extra-utils* package.
+The video exporter is based on [libav](https://libav.org).
+Users of Debian-based distributions can install the *texlive-extra-utils* and *libav-tools* packages.
 
 ```bash
-apt-get install texlive-extra-utils
+apt-get install texlive-extra-utils libav-tools
 ```
 
 The Sozi export tool is available as an NPM package.
@@ -56,7 +57,21 @@ For instance : `-i 2,4:6,10:12:18` will include frames 2, 4, 5, 6, 10, 12, 14, 1
 Convert a Sozi presentation to video
 ------------------------------------
 
-This is not implemented yet.
+```bash
+sozi-to-video [options] presentation.sozi.html
+```
+
+Options:
+
+* `-h`, `--help` output usage information
+* `-o`, `--output <file>` Output file
+* `-W`, `--width <number>` Video width, in pixels (defaults to 1024)
+* `-H`, `--height <number>` Video height (defaults to 768)
+* `-b`, `--bit-rate <number>` Video bit rate (defaults to 2M)
+* `-p`, `--paper <size>` A LaTeX paper size (defaults to a4paper)
+* `-P`, `--portrait` Set the paper orientation to portrait (disabled by default)
+* `-i`, `--include <list>` Frames to include (defaults to 'all')
+* `-x`, `--exclude <list>` Frames to exclude (defaults to 'none')
 
 Known issues and limitations
 ----------------------------
