@@ -1,6 +1,6 @@
 {
   "name": "sozi-export",
-  "version": "16.1.14",
+  "version": "16.1.18",
   "description": "Convert a Sozi presentation to PDF or video",
   "author": "Guillaume Savaton",
   "licence": "MPL",
@@ -8,15 +8,15 @@
     "type": "git",
     "url": "http://github.com/senshu/Sozi-export.git"
   },
+  "files": [
+    "lib",
+    "cli"
+  ],
   "main": "lib/index.js",
   "bin": {
     "sozi-to-video": "./cli/sozi-to-video.js",
     "sozi-to-pdf": "./cli/sozi-to-pdf.js"
   },
-  "files": [
-    "lib",
-    "cli"
-  ],
   "dependencies": {
     "commander": "^2.9.0",
     "slimerjs": "^0.9.6-2",
