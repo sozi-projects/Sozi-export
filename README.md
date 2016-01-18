@@ -15,7 +15,9 @@ apt-get install texlive-extra-utils libav-tools
 ```
 
 The Sozi export tool is available as an NPM package.
-Install [node.js](https://nodejs.org/), then:
+Install [node.js](https://nodejs.org/) 0.10 or later
+(Linux users can use the [NodeSource distributions](https://github.com/nodesource/distributions)),
+then:
 
 ```bash
 npm install -g sozi-export
