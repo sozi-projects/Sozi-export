@@ -1,5 +1,5 @@
-Export Sozi presentations to PDF or video
-=========================================
+Export Sozi presentations to PDF, PPTX or video
+===============================================
 
 This tool is separate from the Sozi presentation editor.
 
@@ -56,6 +56,36 @@ Frames lists have the following syntax:
 
 For instance : `-i 2,4:6,10:12:18` will include frames 2, 4, 5, 6, 10, 12, 14, 16, 18.
 
+Convert a Sozi presentation to PPTX
+-----------------------------------
+
+```bash
+sozi-to-pptx [options] presentation.sozi.html
+```
+
+Options:
+
+* `-h`, `--help` output usage information
+* `-o`, `--output <file>` Output file
+* `-W`, `--width <number>` Page width (defaults to 29.7)
+* `-H`, `--height <number>` Page height (defaults to 21)
+* `-r`, `--resolution <number>` Pixels per width/height unit (defaults to 72)
+* `-i`, `--include <list>` Frames to include (defaults to 'all')
+* `-x`, `--exclude <list>` Frames to exclude (defaults to 'none')
+
+The width, height and resolution options specify the geometry of the browser window
+where the presentation is rendered.
+
+The `include` option is always applied before the `exclude` option.
+Frames lists have the following syntax:
+
+* `all` selects all frames in the presentation.
+* `none` selects no frame.
+* A comma-separated list of frame numbers or ranges.
+  A range is in the form `first:last` or `first:second:last` where `first`, `second` and `last` are frame numbers.
+
+For instance : `-i 2,4:6,10:12:18` will include frames 2, 4, 5, 6, 10, 12, 14, 16, 18.
+
 Convert a Sozi presentation to video
 ------------------------------------
 
@@ -81,4 +111,4 @@ This tool uses a *headless* web browser for rendering.
   However, PhantomJS 1.9.19 fails to render the SVG content of a Sozi presentation.
 * SlimerJS renders SVG content correctly but it does not support the PDF format.
 
-Currently, the PDF export tool renders each frame to a PNG image and joins them into a PDF document.
+Currently, the PDF and PPTX export tools render each frame to a PNG image and joins them into a single document.
