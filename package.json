@@ -21,7 +21,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "officegen": "^0.2.9",
-    "slimerjs": "^0.9.6-2",
+    "slimerjs": "^0.906.0",
     "sync-exec": "^0.6.2",
     "tmp": "0.0.28"
   }
