@@ -3,7 +3,7 @@
   "version": "17.07.30",
   "description": "Convert a Sozi presentation to PDF, PPTX or video",
   "author": "Guillaume Savaton",
-  "licence": "MPL",
+  "license": "MPL-2.0",
   "repository": {
     "type": "git",
     "url": "http://github.com/senshu/Sozi-export.git"
@@ -21,8 +21,8 @@
   "dependencies": {
     "commander": "^2.9.0",
     "officegen": "^0.2.9",
-    "slimerjs": "^0.10.3",
-    "sync-exec": "^0.6.2",
-    "tmp": "0.0.28"
+    "phantomjs-prebuilt": "^2.1.14",
+    "tmp": "^0.0.28",
+    "glob": "^7.1.2"
   }
 }

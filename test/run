@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+HTML=assets/first-presentation.sozi.html
+DIR=node_modules/sozi-export/cli
+
+echo "---- Converting to PDF"
+$DIR/sozi-to-pdf.js $HTML
+
+echo "---- Converting to video"
+$DIR/sozi-to-video.js $HTML
+
+echo "---- Converting to PPTX"
+$DIR/sozi-to-pptx.js $HTML

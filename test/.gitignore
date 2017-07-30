@@ -1,0 +1,4 @@
+*.ogv
+*.pdf
+*.pptx
+node_modules
