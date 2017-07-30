@@ -1,6 +1,6 @@
 {
   "name": "sozi-export",
-  "version": "16.2.1",
+  "version": "17.07.30",
   "description": "Convert a Sozi presentation to PDF, PPTX or video",
   "author": "Guillaume Savaton",
   "licence": "MPL",
@@ -21,7 +21,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "officegen": "^0.2.9",
-    "slimerjs": "^0.906.0",
+    "slimerjs": "^0.10.3",
     "sync-exec": "^0.6.2",
     "tmp": "0.0.28"
   }
