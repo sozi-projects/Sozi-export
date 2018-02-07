@@ -4,14 +4,23 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-HTML=assets/first-presentation.sozi.html
+HTML=first-presentation.sozi.html
 DIR=node_modules/sozi-export/cli
 
-echo "---- Converting to PDF"
-$DIR/sozi-to-pdf.js $HTML
+for v in v17 v18; do
+    echo "-----------------------------------------"
+    echo "-- Running tests for $v"
+    echo "-----------------------------------------"
 
-echo "---- Converting to video"
-$DIR/sozi-to-video.js $HTML
+    echo
+    echo ">> Converting to PDF"
+    $DIR/sozi-to-pdf.js assets/$v/$HTML
 
-echo "---- Converting to PPTX"
-$DIR/sozi-to-pptx.js $HTML
+    echo
+    echo ">> Converting to video"
+    $DIR/sozi-to-video.js assets/$v/$HTML
+
+    echo
+    echo ">> Converting to PPTX"
+    $DIR/sozi-to-pptx.js assets/$v/$HTML
+done

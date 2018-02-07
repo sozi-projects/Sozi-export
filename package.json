@@ -1,6 +1,6 @@
 {
   "name": "sozi-export",
-  "version": "17.08.01",
+  "version": "18.01.02",
   "description": "Convert a Sozi presentation to PDF, PPTX or video",
   "author": "Guillaume Savaton",
   "license": "MPL-2.0",
