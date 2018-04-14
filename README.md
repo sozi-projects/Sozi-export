@@ -23,7 +23,7 @@ then:
 sudo npm install -g sozi-export
 ```
 
-With recent npm 5, the installation is known to fail with this message:
+With NPM 5, the installation is known to fail with this message:
 
 ```
 Phantom installation failed { Error: EACCES: permission denied, link '/tmp/phantomjs/phantomjs-2.1.1-linux-x86_64.tar.bz2-extract-1522473900842/phantomjs-2.1.1-linux-x86_64' -> '/usr/lib/node_modules/sozi-export/node_modules/phantomjs-prebuilt/lib/phantom'
