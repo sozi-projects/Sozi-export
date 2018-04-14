@@ -11,7 +11,7 @@ The video exporter is based on [libav](https://libav.org).
 Users of Debian-based distributions can install the *texlive-extra-utils* and *libav-tools* packages.
 
 ```bash
-apt-get install texlive-extra-utils libav-tools
+sudo apt install texlive-extra-utils libav-tools
 ```
 
 The Sozi export tool is available as an NPM package.
@@ -20,7 +20,19 @@ Install [node.js](https://nodejs.org/) 0.10 or later
 then:
 
 ```bash
-npm install -g sozi-export
+sudo npm install -g sozi-export
+```
+
+With recent npm 5, the installation is known to fail with this message:
+
+```
+Phantom installation failed { Error: EACCES: permission denied, link '/tmp/phantomjs/phantomjs-2.1.1-linux-x86_64.tar.bz2-extract-1522473900842/phantomjs-2.1.1-linux-x86_64' -> '/usr/lib/node_modules/sozi-export/node_modules/phantomjs-prebuilt/lib/phantom'
+```
+
+This can be fixed with the following command:
+
+```bash
+sudo npm install -g sozi-export --unsafe-perm
 ```
 
 Convert a Sozi presentation to PDF
