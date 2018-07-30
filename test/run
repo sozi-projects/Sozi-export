@@ -21,6 +21,10 @@ for v in v17 v18; do
     $DIR/sozi-to-video.js assets/$v/$HTML
 
     echo
+    echo ">> Converting to image sequence"
+    $DIR/sozi-to-video.js --images assets/$v/$HTML
+
+    echo
     echo ">> Converting to PPTX"
     $DIR/sozi-to-pptx.js assets/$v/$HTML
 done

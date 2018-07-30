@@ -108,7 +108,8 @@ sozi-to-video [options] presentation.sozi.html
 Options:
 
 * `-h`, `--help` output usage information
-* `-o`, `--output <file>` Output file
+* `-o`, `--output <file>` Output video file, or target folder when exporting to a sequence of images
+* `-i`, `--images` Export as a sequence of PNG files instead of a single video file
 * `-W`, `--width <number>` Video width, in pixels (defaults to 1024)
 * `-H`, `--height <number>` Video height (defaults to 768)
 * `-b`, `--bit-rate <number>` Video bit rate (defaults to 2M)

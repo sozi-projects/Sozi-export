@@ -10,7 +10,8 @@ var cmd = require("commander");
 var path = require("path");
 var soziExport = require("../lib");
 
-cmd.option("-o, --output <file>", "Output file")
+cmd.option("-o, --output <file>", "Output video file, or output folder for an image sequence")
+   .option("-i, --images", "Generate a sequence of PNG image files", false)
    .option("-W, --width <number>", "Video width, in pixels (defaults to 1024)", 1024)
    .option("-H, --height <number>", "Video height, in pixels (defaults to 768)", 768)
    .option("-b, --bit-rate <number>", "Video bit rate, in bits/second (defaults to 2M)", "2M")
