@@ -6,8 +6,11 @@
 
 HTML=first-presentation.sozi.html
 DIR=node_modules/sozi-export/cli
+VERSIONS=v17 v18
 
-for v in v17 v18; do
+for v in $VERSIONS; do
+    rm assets/$v/*.{png,pdf,pptx,ogv}
+
     echo "-----------------------------------------"
     echo "-- Running tests for $v"
     echo "-----------------------------------------"
