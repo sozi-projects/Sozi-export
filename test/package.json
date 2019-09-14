@@ -1,6 +1,6 @@
 {
   "name": "sozi-export-test",
-  "version": "17.07.30",
+  "version": "19.09.14",
   "description": "Convert a Sozi presentation to PDF, PPTX or video",
   "author": "Guillaume Savaton",
   "license": "MPL-2.0",
@@ -9,6 +9,6 @@
     "url": "http://github.com/senshu/Sozi-export.git"
   },
   "dependencies": {
-      "sozi-export": "file:.."
+    "sozi-export": "file:.."
   }
 }

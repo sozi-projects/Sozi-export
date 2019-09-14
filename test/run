@@ -9,7 +9,7 @@ DIR=node_modules/sozi-export/cli
 VERSIONS="v17 v18"
 
 for v in $VERSIONS; do
-    rm assets/$v/*.{png,pdf,pptx,ogv}
+    rm -f assets/$v/*.{png,pdf,pptx,ogv}
 
     echo "-----------------------------------------"
     echo "-- Running tests for $v"

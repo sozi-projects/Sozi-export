@@ -14,6 +14,7 @@ cmd.option("-o, --output <file>", "Output video file, or output folder for an im
    .option("-i, --images", "Generate a sequence of PNG image files", false)
    .option("-W, --width <number>", "Video width, in pixels (defaults to 1024)", 1024)
    .option("-H, --height <number>", "Video height, in pixels (defaults to 768)", 768)
+   .option("-c, --png-compression <number>", "Compression level of the generated PNG files (0 to 100, higher means smaller files, defaults to 100)", 100)
    .option("-b, --bit-rate <number>", "Video bit rate, in bits/second (defaults to 2M)", "2M")
    .parse(process.argv);
 
