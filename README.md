@@ -51,6 +51,7 @@ Options:
 * `-r`, `--resolution <number>` Pixels per width/height unit (defaults to 72)
 * `-p`, `--paper <size>` A LaTeX paper size (defaults to a4paper)
 * `-P`, `--portrait` Set the paper orientation to portrait (disabled by default)
+* `-c`, `--png-compression <number>`, Compression level of the generated PNG files (0 to 100, higher means smaller files, defaults to 100)
 * `-i`, `--include <list>` Frames to include (defaults to 'all')
 * `-x`, `--exclude <list>` Frames to exclude (defaults to 'none')
 
@@ -82,6 +83,7 @@ Options:
 * `-W`, `--width <number>` Page width (defaults to 29.7)
 * `-H`, `--height <number>` Page height (defaults to 21)
 * `-r`, `--resolution <number>` Pixels per width/height unit (defaults to 72)
+* `-c`, `--png-compression <number>`, Compression level of the generated PNG files (0 to 100, higher means smaller files, defaults to 100)
 * `-i`, `--include <list>` Frames to include (defaults to 'all')
 * `-x`, `--exclude <list>` Frames to exclude (defaults to 'none')
 
@@ -113,6 +115,7 @@ Options:
 * `-W`, `--width <number>` Video width, in pixels (defaults to 1024)
 * `-H`, `--height <number>` Video height (defaults to 768)
 * `-b`, `--bit-rate <number>` Video bit rate (defaults to 2M)
+* `-c`, `--png-compression <number>`, Compression level of the generated PNG files (0 to 100, higher means smaller files, defaults to 100)
 
 Known issues and limitations
 ----------------------------
