@@ -13,6 +13,7 @@ var soziExport = require("../lib");
 cmd.option("-o, --output <file>", "Output file")
    .option("-W, --width <number>", "Page width (defaults to 29.7)", 29.7)
    .option("-H, --height <number>", "Page height (defaults to 21)", 21)
+   .option("-c, --png-compression <number>", "Compression level of the generated PNG files (0 to 100, higher means smaller files, defaults to 100)", 100)
    .option("-r, --resolution <number>", "Pixels per width/height unit (defaults to 72)", 72)
    .option("-p, --paper <size>", "A LaTeX paper size (defaults to a4paper)", "a4paper")
    .option("-P, --portrait", "Set the paper orientation to portrait (disabled by default)")
