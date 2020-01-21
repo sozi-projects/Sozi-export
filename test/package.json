@@ -9,6 +9,6 @@
     "url": "http://github.com/senshu/Sozi-export.git"
   },
   "dependencies": {
-      "sozi-export": "file:.."
+    "sozi-export": "file:.."
   }
 }
