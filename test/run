@@ -6,7 +6,8 @@
 
 HTML=first-presentation.sozi.html
 DIR=node_modules/sozi-export/cli
-VERSIONS="v17 v18"
+VERSIONS="v20"
+# VERSIONS="v17 v18 v20"
 
 for v in $VERSIONS; do
     rm -f assets/$v/*.{png,pdf,pptx,ogv}
@@ -15,19 +16,19 @@ for v in $VERSIONS; do
     echo "-- Running tests for $v"
     echo "-----------------------------------------"
 
-    echo
-    echo ">> Converting to PDF"
-    $DIR/sozi-to-pdf.js assets/$v/$HTML
+    # echo
+    # echo ">> Converting to PDF"
+    # $DIR/sozi-to-pdf.js assets/$v/$HTML
 
     echo
     echo ">> Converting to video"
     $DIR/sozi-to-video.js assets/$v/$HTML
 
-    echo
-    echo ">> Converting to image sequence"
-    $DIR/sozi-to-video.js --images assets/$v/$HTML
-
-    echo
-    echo ">> Converting to PPTX"
-    $DIR/sozi-to-pptx.js assets/$v/$HTML
+    # echo
+    # echo ">> Converting to image sequence"
+    # $DIR/sozi-to-video.js --images assets/$v/$HTML
+    #
+    # echo
+    # echo ">> Converting to PPTX"
+    # $DIR/sozi-to-pptx.js assets/$v/$HTML
 done
