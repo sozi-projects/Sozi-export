@@ -17,6 +17,7 @@ cmd.option("-o, --output <file>", "Output file")
    .option("-r, --resolution <number>", "Pixels per width/height unit (defaults to 72)", 72)
    .option("-i, --include <list>", "Frames to include (defaults to 'all')", "all")
    .option("-x, --exclude <list>", "Frames to exclude (defaults to 'none')", "none")
+   .option("--wide", "Widescreen presentation")
    .parse(process.argv);
 
 // The input file name is the last argument
