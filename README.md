@@ -1,5 +1,5 @@
 
-Since Sozi 20.10, export features are integrated in the
+:warning: Since Sozi 20.10, export features are integrated in the
 [Sozi presentation editor](https://github.com/sozi-projects/Sozi).
 Development of the standalone Sozi-export tool is halted and there is no plan
 to do any maintenance work on it.
